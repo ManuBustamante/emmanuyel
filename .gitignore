@@ -1,0 +1,16 @@
+package programacion2;
+
+import javax.swing.JOptionPane;
+
+public class Login {
+	public static void main(String[] args) {
+		String user = JOptionPane.showInputDialog(null, "Usuario");
+		String password = JOptionPane.showInputDialog(null, "Contraseña");
+
+		if ("Emmanuel".equals(user) && "Programa2".equals(password)) {
+			JOptionPane.showMessageDialog(null, "Bienvenido");
+		}else {
+			JOptionPane.showMessageDialog(null, "Conraseña o Usuario Incorreto");
+		} 
+	}
+}
